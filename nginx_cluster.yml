@@ -15,6 +15,7 @@
     pacemaker_cluster_name: nginx_ha_cluster
     pacemaker_properties:
       stonith_enabled: "false"
+    pacemaker_resources_delete: true
     pacemaker_resources:
       - id: vip230
         type: "ocf:heartbeat:IPaddr2"
