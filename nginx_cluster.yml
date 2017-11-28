@@ -9,7 +9,6 @@
     - common
     - nginx
     - pacemaker
-
   vars:
       pacemaker_ansible_group: cluster_nginx
       pacemaker_password: secret
