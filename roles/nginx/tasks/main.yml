@@ -7,7 +7,7 @@
   template: src=nginx.conf dest=/etc/nginx/nginx.conf
 
 - name: Template status.conf
-  template: src=status.conf dest=/etc/nginx/conf.d/status.conf
+  template: src=status.conf dest=/etc/nginx/default.d/status.conf
 
 - name: Template server.conf
   template: src=server.conf dest=/etc/nginx/conf.d/server.conf
