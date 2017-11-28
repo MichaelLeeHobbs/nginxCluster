@@ -27,8 +27,9 @@
               interval: 5s
       - id: nginx
         type: "ocf:heartbeat:nginx"
-        configfile: "/etc/nginx/nginx.conf"
-        status10url: "http://localhost/nginx_status"
+        options:
+          configfile: "/etc/nginx/nginx.conf"
+          status10url: "http://localhost/nginx_status"
         op:
           - action: monitor
             options:
