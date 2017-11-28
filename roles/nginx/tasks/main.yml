@@ -11,4 +11,4 @@
   ignore_errors: yes
 
 - name: http service state
-  service: name=nginx state=stop enabled=no
+  service: name=nginx state=stopped enabled=no
