@@ -10,7 +10,7 @@
     - nginx
     - pacemaker
   vars:
-    pacemaker_ansible_group: cluster_nginx
+    pacemaker_ansible_group: nginx-cluster
     pacemaker_password: secret
     pacemaker_cluster_name: nginx_ha_cluster
     pacemaker_properties:
