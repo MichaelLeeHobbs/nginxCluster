@@ -1,0 +1,11 @@
+---
+- name: Install NGINX and Pacemaker
+  hosts: nginx-cluster
+  remote_user: root
+  # remote_user: user
+  # sudo: yes
+
+  roles:
+    - common
+    - nginx
+    - pacemaker
