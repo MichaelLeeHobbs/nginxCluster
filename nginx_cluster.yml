@@ -45,11 +45,11 @@
         options:
           configfile: "/etc/nginx/nginx.conf"
           status10url: "http://localhost/nginx_status"
-          start-delay: "5s"
         op:
           - action: monitor
             options:
               interval: 5s
+              start-delay: "5s"
         group:
           name: "web_services"
 #    pacemaker_constraints:
