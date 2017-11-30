@@ -10,6 +10,23 @@
     - nginx
     - pacemaker
   vars:
+    tcp_streams:
+      rdp_3389:
+        listen_ip: 0.0.0.0
+        listen_port: 3389
+        proxy_bind: 192.168.1.231
+        upstream_server:
+          - ip: 192.168.1.111
+            port: 3389
+      dicom_104:
+        listen_ip: 0.0.0.0
+        listen_port: 104
+        proxy_bind: 192.168.1.230
+        upstream_servers:
+          - ip: 192.168.1.211
+            port: 104
+          - ip: 192.168.1.214
+            port: 104
     pacemaker_ansible_group: nginx-cluster
     pacemaker_password: secret
     pacemaker_cluster_name: nginx_ha_cluster
