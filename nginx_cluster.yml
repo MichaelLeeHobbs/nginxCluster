@@ -15,7 +15,7 @@
         listen_ip: 0.0.0.0
         listen_port: 3389
         proxy_bind: 192.168.1.231
-        upstream_server:
+        upstream_servers:
           - ip: 192.168.1.111
             port: 3389
       - name: dicom_104
