@@ -12,6 +12,10 @@
 - name: Template server.conf
   template: src=server.conf dest=/etc/nginx/conf.d/server.conf
 
+- name: Creates /etc/nginx/tcpconf.d directory
+  file:
+    path: /etc/nginx/tcpconf.d
+
 - name: Template tcpStream.conf
   when: tcp_streams is defined
   template: src=tcpStream.conf dest=/etc/nginx/tcpconf.d/tcpStream.conf
