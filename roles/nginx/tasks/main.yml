@@ -15,6 +15,7 @@
 - name: Creates /etc/nginx/tcpconf.d directory
   file:
     path: /etc/nginx/tcpconf.d
+    state: directory
 
 - name: Template tcpStream.conf
   when: tcp_streams is defined
